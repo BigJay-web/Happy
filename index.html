@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <h1>Will you be my Valentine?</h1>
+        <button id="yesButton">Yes! ❤️</button>
+    </div>
+
+    <!-- Tin Tin Input Page -->
+    <div id="tinTinPage" class="hidden">
+        <h2>Thank you for saying Yes! Now type "tin tin" to unlock the next surprise.</h2>
+        <input type="text" id="tinTinInput" placeholder="Type 'tin tin'">
+        <button id="nextButton" class="hidden">Enter</button>
+    </div>
+
+    <!-- Poetic Message About Distance -->
+    <div id="poeticMessage" class="hidden">
+        <h2>Though we're apart today, I can't wait for next Saturday... Until then, let these words remind you of how much you mean to me.</h2>
+        <p>“I feel this deep ache in my chest that we can’t be together today...but next Saturday feels like it’s written in the stars. Until then, let these words remind you of how much you mean to me…”</p>
+    </div>
+
+    <!-- About Twyla Section -->
+    <div id="aboutTwyla" class="hidden">
+        <h2>About Twyla:</h2>
+        <p>“You are poetry incarnate—your presence is like a carefully crafted verse, always full of meaning. There’s a quiet strength within you, an elegance that cannot be captured by the ordinary world…”</p>
+        <p>Your favorites tell the story of who you are: silver, purple, the mysteries of Angels and Demons, and learning Italian to make the world a little more beautiful.</p>
+    </div>
+
+    <!-- Game Section (Treasure Hunt) -->
+    <div id="gameSection" class="hidden">
+        <h2>Let's play a little game!</h2>
+        <p>Ready for a treasure hunt? Answer the questions to unlock your prize.</p>
+
+        <form id="gameForm">
+            <label>1. What book did you give me?</label><br>
+            <input type="radio" name="question1" value="Crime and Punishment"> Crime and Punishment<br>
+            <input type="radio" name="question1" value="The Great Gatsby"> The Great Gatsby<br>
+            <input type="radio" name="question1" value="To Kill a Mockingbird"> To Kill a Mockingbird<br>
+            <br>
+            
+            <label>2. Who's your favorite author?</label><br>
+            <input type="radio" name="question2" value="Dan Brown"> Dan Brown<br>
+            <input type="radio" name="question2" value="J.K. Rowling"> J.K. Rowling<br>
+            <input type="radio" name="question2" value="George Orwell"> George Orwell<br>
+            <br>
+
+            <button type="button" id="gameSubmit">Submit</button>
+        </form>
+
+        <div id="treasureMessage" class="hidden">
+            <p>You’ve won my heart, just as you always do, Twyla. Your presence is the greatest treasure I could ever hope to find.</p>
+        </div>
+    </div>
+
+    <!-- Countdown to Next Saturday -->
+    <div id="countdown" class="hidden">
+        <h3>Only <span id="daysLeft"></span> days left until we’re together!</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
