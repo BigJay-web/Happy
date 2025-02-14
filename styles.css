@@ -1,162 +1,131 @@
-/* General Reset and Global Styles */
-* {
+/* General Styling */
+body {
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
-    line-height: 1.6;
-    font-size: 16px;
+    text-align: center;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
-    background: #2b2d42;
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
+    background-color: #2b2d42;
+    color: white;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     font-size: 3.5em;
-    letter-spacing: 2px;
     font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-style: italic;
     margin-top: 10px;
-    color: #e2e2e2;
 }
 
-/* Navigation Styles */
-nav {
-    background-color: #2b2d42;
-    padding: 10px 0;
-}
-
+/* Navigation Styling */
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
 }
 
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
 }
 
 nav ul li a:hover {
     color: #e2e2e2;
-    border-bottom: 2px solid #e2e2e2;
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    text-align: center;
+/* Parallax Scrolling */
+.parallax {
+    background-image: url('path-to-your-image.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-section h2 {
-    font-size: 2.5em;
-    color: #2b2d42;
-    margin-bottom: 20px;
+.parallax-section {
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.parallax h2 {
+    font-size: 2.8em;
     font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-section p {
-    font-size: 1.1em;
+.parallax p {
+    font-size: 1.4em;
     max-width: 800px;
     margin: 0 auto;
-    color: #555;
+    line-height: 1.5;
 }
 
-/* Specific Section Styles */
-
-/* Music Section */
-#music p {
-    font-style: italic;
-    color: #4a4e69;
-}
-
-/* Reading Section */
-#reading p {
-    color: #6a5d7c;
-    font-size: 1.2em;
-}
-
-/* Movie Section */
-#movies p {
-    color: #3a3d57;
-    font-style: italic;
-}
-
-/* Valentine’s Day Message */
-#valentine p {
+/* Admire & Valentine's Section */
+#admire, #valentine {
+    background-color: #ffffff;
+    color: #2b2d42;
+    padding: 60px 20px;
     font-size: 1.3em;
-    font-family: 'Georgia', serif;
-    color: #d36c6c;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#valentine {
+    background-color: #f8d7da;
+}
+
+#admire h2, #valentine h2 {
+    font-size: 2.8em;
     font-weight: bold;
 }
 
-/* Secret Admirer’s Corner */
-#admire p {
-    font-size: 1.2em;
-    color: #9a8c98;
-    font-style: italic;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
     background-color: #2b2d42;
-    text-align: center;
+    color: white;
     padding: 20px;
-    color: #e2e2e2;
-    font-size: 1.1em;
-    margin-top: 40px;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-/* Hover Effects for Sections */
-section:hover {
-    background-color: #e8e8e8;
-    transition: background-color 0.5s ease;
+/* Scroll Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
-/* General Layout for Small and Large Screens */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
+.parallax-section, #admire, #valentine {
+    animation: fadeIn 1.5s ease-out;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Additional Styles */
+a {
+    transition: all 0.3s ease;
+}
 
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    section {
-        padding: 40px 10px;
-    }
-
-    section h2 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1em;
-    }
+a:hover {
+    color: #ff6347;
 }
