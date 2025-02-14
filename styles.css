@@ -1,4 +1,112 @@
-/* Music Playlist Section */
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Welcome Section */
+#landing {
+    background: #e0bbd4;
+    color: #5c3d4e;
+}
+
+.welcome h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #d57cfa;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #bc61b5;
+}
+
+/* Memory Section */
+.memory {
+    display: none;
+}
+
+.memory-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.memory-text {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.next-btn {
+    background-color: #d57cfa;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Puzzle Input */
+.puzzle-input {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+/* Final Message */
+#final-message {
+    display: none;
+}
+
+#final-message h2 {
+    font-size: 2.5em;
+    color: #6a4e87;
+}
+
+#special-msg {
+    font-size: 1.5em;
+    color: #444;
+}
+
+/* Gift Section */
+#gift {
+    display: none;
+}
+
+#gift h2 {
+    font-size: 2.5em;
+    color: #6a4e87;
+}
+
+/* Playlist Section */
 #music-player {
     display: flex;
     justify-content: center;
@@ -6,10 +114,8 @@
 }
 
 #playlist h2 {
-    font-family: 'Libre Baskerville', serif;
-    color: #3d2a45;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    color: #6a4e87;
 }
 
 #playlist p {
@@ -35,35 +141,4 @@
     font-size: 1.2em;
     color: #333;
     line-height: 1.5;
-}
-
-#movie-section .btn {
-    background-color: #d57cfa;
-    color: white;
-    font-size: 18px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#movie-section .btn:hover {
-    background-color: #bc61b5;
-}
-
-/* Button Hover Effect */
-.btn {
-    background-color: #d57cfa;
-    color: white;
-    font-size: 18px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #bc61b5;
 }
