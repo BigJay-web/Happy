@@ -3,57 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Twyla - A Valentine’s Tribute</title>
+    <title>My Valentine's Adventure with Twyla</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>For Twyla</h1>
-        <p>A tribute to your beauty, mind, and soul</p>
+        <h1>Welcome, My Love!</h1>
+        <p>Your Valentine's Adventure Begins Here 💖</p>
+        <button id="start-btn">Start Adventure</button>
     </header>
-    <section class="intro">
-        <h2>About You</h2>
-        <p>You are the girl who carries the essence of a thousand stories, a captivating blend of elegance and strength. Your love for books and music speaks volumes about your vibrant spirit. You light up every room you walk into, and your aura is a reflection of your positive energy. I'm grateful every day that I get to call you mine.</p>
+
+    <section id="journey" style="display: none;">
+        <h2>Our Journey of Memories</h2>
+        <div class="memory" id="memory-1">
+            <img src="first-date.jpg" alt="First Date">
+            <p>Remember our first date? I can still feel the excitement. <button class="next-memory">Next</button></p>
+        </div>
+
+        <div class="memory" id="memory-2" style="display: none;">
+            <img src="favorite-song.jpg" alt="Favorite Song">
+            <p>Our favorite song always reminds me of how we clicked. <button class="next-memory">Next</button></p>
+        </div>
+
+        <div class="memory" id="memory-3" style="display: none;">
+            <img src="trip-photo.jpg" alt="Our Trip">
+            <p>That trip we took together was unforgettable. I want many more moments like that. <button class="next-memory">Next</button></p>
+        </div>
+
+        <h2>Puzzle Time</h2>
+        <p>Solve this little challenge to unlock your final surprise. <span id="puzzle"></span></p>
+        <input type="text" id="puzzle-input" placeholder="What's the answer?" />
+        <button onclick="checkPuzzle()">Submit</button>
     </section>
 
-    <section class="interests">
-        <h2>Your Passions</h2>
-        <div class="interest">
-            <h3>Books</h3>
-            <p>With every page you turn, you open your mind to the world. Dan Brown’s mysteries, especially *Angels and Demons*, show your love for complex and thrilling narratives. I admire your ability to dive into a new story and get lost in its beauty.</p>
-        </div>
-        <div class="interest">
-            <h3>Music</h3>
-            <p>Ariana Grande's empowering anthems fill your soul with joy. Your music playlist mirrors your positive mindset and resilience. The rhythm of life that you follow is a beat that speaks directly to my heart.</p>
-        </div>
-        <div class="interest">
-            <h3>Learning</h3>
-            <p>Your love for learning is one of the many things that makes you so special. Whether it's Italian or another new passion, you embrace growth with open arms. You inspire me every day to keep learning and evolving alongside you.</p>
-        </div>
+    <section id="final-message" style="display: none;">
+        <h2>Your Special Message</h2>
+        <p>Here’s something to let you know just how much I love you:</p>
+        <blockquote>
+            <p>You’re not just the girl of my dreams,</p>
+            <p>You’re the spark that lights up my heart’s beams.</p>
+            <p>From every laugh, every smile you bring,</p>
+            <p>You make me feel like I could truly sing.</p>
+        </blockquote>
+        <button onclick="revealGift()">See Your Gift 🎁</button>
     </section>
 
-    <section class="poetic-message">
-        <h2>A Poetic Tribute</h2>
-        <p>In your smile, I see the stars align,</p>
-        <p>Your laughter, like music, echoes in my mind.</p>
-        <p>With your books, you hold the world in your hand,</p>
-        <p>Your strength is like waves, upon which we stand.</p>
-        <p>With every day, your light becomes brighter,</p>
-        <p>A woman like you makes my heart feel lighter.</p>
-    </section>
-
-    <section class="game">
-        <h2>Let’s Play a Game</h2>
-        <button id="start-game">Click Me</button>
-        <div id="game-message" style="display:none;">
-            <p>Type <strong>tin tin</strong> and click Enter to unlock a special surprise...</p>
-            <input type="text" id="user-input">
-            <button onclick="checkInput()">Enter</button>
-        </div>
+    <section id="gift" style="display: none;">
+        <h2>Your Valentine's Gift</h2>
+        <p>Your gift is a collection of memories—our song, our favorite moments, and more. I’m forever thankful for you, Twyla. 💖</p>
+        <a href="song_playlist_link" target="_blank">Here’s your special playlist 🎶</a>
     </section>
 
     <footer>
-        <p>Thank you for being you. Always. - Your Forever Valentine 💜</p>
+        <p>Made with love by your one and only Valentine 💜</p>
     </footer>
 
     <script src="script.js"></script>
