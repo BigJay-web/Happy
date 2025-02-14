@@ -1,109 +1,162 @@
-/* Basic Page Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+/* General Reset and Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Header Styles */
 header {
-    text-align: center;
-    padding: 40px 20px;
     background: #2b2d42;
     color: #fff;
+    text-align: center;
+    padding: 80px 20px;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 header p {
     font-size: 1.2em;
+    margin-top: 10px;
+    color: #e2e2e2;
 }
 
 /* Navigation Styles */
+nav {
+    background-color: #2b2d42;
+    padding: 10px 0;
+}
+
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 nav ul li a:hover {
     color: #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
 }
 
-/* Parallax Scrolling Background */
-.parallax {
-    background-image: url('path-to-image.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* Parallax Section Styling */
-.parallax-section {
-    padding: 100px 20px;
+/* Section Styling */
+section {
+    padding: 60px 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
 }
 
-.parallax h2 {
-    font-size: 2.8em;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+section h2 {
+    font-size: 2.5em;
+    color: #2b2d42;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.parallax p {
-    font-size: 1.3em;
-    color: #fff;
+section p {
+    font-size: 1.1em;
     max-width: 800px;
     margin: 0 auto;
+    color: #555;
 }
 
-/* Silver-Themed Styling for Twyla's Self-Improvement */
-#reading p {
+/* Specific Section Styles */
+
+/* Music Section */
+#music p {
     font-style: italic;
-    color: #8a8d8f;
+    color: #4a4e69;
 }
 
-/* Valentine's Day Section */
-#valentine {
-    text-align: center;
-    padding: 30px;
-    background-color: #f8d7da;
-    color: #2b2d42;
-    font-size: 1.5em;
+/* Reading Section */
+#reading p {
+    color: #6a5d7c;
+    font-size: 1.2em;
 }
 
+/* Movie Section */
+#movies p {
+    color: #3a3d57;
+    font-style: italic;
+}
+
+/* Valentine’s Day Message */
 #valentine p {
     font-size: 1.3em;
-    font-weight: 600;
+    font-family: 'Georgia', serif;
+    color: #d36c6c;
+    font-weight: bold;
+}
+
+/* Secret Admirer’s Corner */
+#admire p {
+    font-size: 1.2em;
+    color: #9a8c98;
+    font-style: italic;
 }
 
 /* Footer Styling */
 footer {
+    background-color: #2b2d42;
     text-align: center;
     padding: 20px;
-    background-color: #2b2d42;
-    color: #fff;
+    color: #e2e2e2;
     font-size: 1.1em;
+    margin-top: 40px;
+}
+
+/* Hover Effects for Sections */
+section:hover {
+    background-color: #e8e8e8;
+    transition: background-color 0.5s ease;
+}
+
+/* General Layout for Small and Large Screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
 }
