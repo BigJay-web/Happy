@@ -1,87 +1,69 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #f9f5f3;
-    color: #333;
-    text-align: center;
-    padding: 30px;
+/* Music Playlist Section */
+#music-player {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-h1, h2 {
+#playlist h2 {
     font-family: 'Libre Baskerville', serif;
-    color: #6c4f9c;
+    color: #3d2a45;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #6c4f9c;
+#playlist p {
+    font-size: 1.3em;
+    color: #444;
+}
+
+/* Movie Section */
+#movie-section {
+    background: #f7f7f7;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+#movie-section h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #3d2a45;
+    font-size: 2.5em;
+}
+
+#movie-section p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+}
+
+#movie-section .btn {
+    background-color: #d57cfa;
     color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #56397b;
-}
-
-#header {
-    padding: 50px;
-}
-
-.memory {
-    margin: 30px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#journey {
-    background-color: #e8d8f3;
-    border-radius: 20px;
-    padding: 50px;
-    margin-top: 40px;
-}
-
-#final-message {
-    background-color: #d8d2f0;
-    border-radius: 10px;
-    padding: 30px;
-    display: none;
-}
-
-#gift {
-    background-color: #e8e6f3;
-    padding: 20px;
-    margin-top: 30px;
-    display: none;
-}
-
-footer {
-    margin-top: 50px;
-    font-style: italic;
-}
-
-input {
-    padding: 8px;
     font-size: 18px;
-    width: 300px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-#start-btn {
-    font-size: 20px;
-    padding: 15px 25px;
-    background-color: #f7b1d6;
-    color: #fff;
+    padding: 15px 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#start-btn:hover {
-    background-color: #d98cbf;
+#movie-section .btn:hover {
+    background-color: #bc61b5;
+}
+
+/* Button Hover Effect */
+.btn {
+    background-color: #d57cfa;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #bc61b5;
 }
