@@ -3,7 +3,7 @@ let puzzleAnswer = "love"; // The answer to the puzzle
 
 // Start the journey
 function startJourney() {
-    document.getElementById('header').style.display = 'none';
+    document.getElementById('landing').style.display = 'none';
     document.getElementById('journey').style.display = 'block';
 }
 
@@ -21,11 +21,20 @@ function checkPuzzle() {
     if (input === puzzleAnswer) {
         document.getElementById('final-message').style.display = 'block';
         document.getElementById('journey').style.display = 'none';
-        document.getElementById('final-msg').textContent = 'You unlocked my heart with the right answer. 💖';
-        document.body.style.backgroundColor = '#f3d1e7'; // Changing the background to a more warm tone
-        document.body.style.fontFamily = 'Libre Baskerville, serif'; // Changing font to something more classic
-        document.querySelector("h1").style.color = '#b5449e'; // Accent color changes
-        document.querySelector("footer").style.color = '#6f3d77';
+        document.getElementById('special-msg').textContent = 'You unlocked my heart. 💖';
+        document.body.style.backgroundColor = '#f3f1f8'; // Background color change
+        document.body.style.fontFamily = 'Libre Baskerville, serif'; // Font change
+        document.querySelector("h1").style.color = '#7d5ba6'; // Color change
+        
+        // Show the music playlist after unlocking
+        setTimeout(function() {
+            document.getElementById('playlist').style.display = 'block';
+        }, 2000);
+        
+        // Show the movie section after playlist
+        setTimeout(function() {
+            document.getElementById('movie-section').style.display = 'block';
+        }, 4000);
     } else {
         alert('Try again. 😔');
     }
@@ -35,4 +44,10 @@ function checkPuzzle() {
 function revealGift() {
     document.getElementById('gift').style.display = 'block';
     document.getElementById('final-message').style.display = 'none';
+}
+
+// Back to Gift Section from Movie
+function goBackToGift() {
+    document.getElementById('movie-section').style.display = 'none';
+    document.getElementById('gift').style.display = 'block';
 }
