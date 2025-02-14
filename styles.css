@@ -11,6 +11,8 @@ body {
     color: #333;
     line-height: 1.6;
     font-size: 16px;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scroll on navigation links */
 }
 
 /* Header Styles */
@@ -19,6 +21,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 80px 20px;
+    opacity: 0; /* Initially hidden for fade-in */
+    animation: fadeIn 1s forwards 0.5s; /* Fade-in animation with delay */
 }
 
 header h1 {
@@ -37,6 +41,7 @@ header p {
 nav {
     background-color: #2b2d42;
     padding: 10px 0;
+    animation: fadeIn 1s forwards 1s; /* Fade-in effect for nav */
 }
 
 nav ul {
@@ -66,6 +71,8 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     text-align: center;
+    opacity: 0; /* Initially hidden for fade-in */
+    animation: fadeIn 1s forwards; /* Fade-in animation for sections */
 }
 
 section h2 {
@@ -158,5 +165,17 @@ section:hover {
 
     section p {
         font-size: 1em;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
