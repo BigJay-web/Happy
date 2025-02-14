@@ -1,181 +1,109 @@
-/* General Reset and Global Styles */
-* {
+/* Basic Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    font-size: 16px;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scroll on navigation links */
 }
 
 /* Header Styles */
 header {
+    text-align: center;
+    padding: 40px 20px;
     background: #2b2d42;
     color: #fff;
-    text-align: center;
-    padding: 80px 20px;
-    opacity: 0; /* Initially hidden for fade-in */
-    animation: fadeIn 1s forwards 0.5s; /* Fade-in animation with delay */
 }
 
 header h1 {
-    font-size: 3.5em;
-    letter-spacing: 2px;
-    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2em;
-    margin-top: 10px;
-    color: #e2e2e2;
 }
 
 /* Navigation Styles */
-nav {
-    background-color: #2b2d42;
-    padding: 10px 0;
-    animation: fadeIn 1s forwards 1s; /* Fade-in effect for nav */
-}
-
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
 }
 
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.2em;
     text-transform: uppercase;
 }
 
 nav ul li a:hover {
     color: #e2e2e2;
-    border-bottom: 2px solid #e2e2e2;
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
+/* Parallax Scrolling Background */
+.parallax {
+    background-image: url('path-to-image.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Parallax Section Styling */
+.parallax-section {
+    padding: 100px 20px;
     text-align: center;
-    opacity: 0; /* Initially hidden for fade-in */
-    animation: fadeIn 1s forwards; /* Fade-in animation for sections */
+    background: rgba(255, 255, 255, 0.9);
 }
 
-section h2 {
-    font-size: 2.5em;
-    color: #2b2d42;
-    margin-bottom: 20px;
-    font-weight: bold;
+.parallax h2 {
+    font-size: 2.8em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-section p {
-    font-size: 1.1em;
+.parallax p {
+    font-size: 1.3em;
+    color: #fff;
     max-width: 800px;
     margin: 0 auto;
-    color: #555;
 }
 
-/* Specific Section Styles */
-
-/* Music Section */
-#music p {
-    font-style: italic;
-    color: #4a4e69;
-}
-
-/* Reading Section */
+/* Silver-Themed Styling for Twyla's Self-Improvement */
 #reading p {
-    color: #6a5d7c;
-    font-size: 1.2em;
-}
-
-/* Movie Section */
-#movies p {
-    color: #3a3d57;
     font-style: italic;
+    color: #8a8d8f;
 }
 
-/* Valentine’s Day Message */
+/* Valentine's Day Section */
+#valentine {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8d7da;
+    color: #2b2d42;
+    font-size: 1.5em;
+}
+
 #valentine p {
     font-size: 1.3em;
-    font-family: 'Georgia', serif;
-    color: #d36c6c;
-    font-weight: bold;
-}
-
-/* Secret Admirer’s Corner */
-#admire p {
-    font-size: 1.2em;
-    color: #9a8c98;
-    font-style: italic;
+    font-weight: 600;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #2b2d42;
     text-align: center;
     padding: 20px;
-    color: #e2e2e2;
+    background-color: #2b2d42;
+    color: #fff;
     font-size: 1.1em;
-    margin-top: 40px;
-}
-
-/* Hover Effects for Sections */
-section:hover {
-    background-color: #e8e8e8;
-    transition: background-color 0.5s ease;
-}
-
-/* General Layout for Small and Large Screens */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    section {
-        padding: 40px 10px;
-    }
-
-    section h2 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1em;
-    }
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
