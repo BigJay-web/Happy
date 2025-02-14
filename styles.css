@@ -1,9 +1,9 @@
 /* General Styling */
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f9f6f1;
     color: #333;
     text-align: center;
 }
@@ -12,27 +12,28 @@ body {
 header {
     background-color: #2b2d42;
     color: white;
-    padding: 50px 20px;
+    padding: 60px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 3.5em;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* Navigation Styling */
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
 }
 
@@ -49,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e2e2e2;
+    color: #ff6347;
 }
 
 /* Parallax Scrolling */
@@ -69,34 +70,38 @@ nav ul li a:hover {
 }
 
 .parallax h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.8em;
     font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .parallax p {
     font-size: 1.4em;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Admire & Valentine's Section */
 #admire, #valentine {
     background-color: #ffffff;
     color: #2b2d42;
-    padding: 60px 20px;
+    padding: 70px 20px;
     font-size: 1.3em;
+    line-height: 1.7;
     letter-spacing: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #valentine {
     background-color: #f8d7da;
+    font-style: italic;
 }
 
 #admire h2, #valentine h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.8em;
     font-weight: bold;
 }
