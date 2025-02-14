@@ -3,58 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Special Journey | Twyla 💜</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Our Journey Together 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="header">
-        <h1>Our Journey Together 💖</h1>
-        <p>Your unforgettable adventure begins now.</p>
-        <button id="start-btn" onclick="startJourney()">Start</button>
-    </header>
+    <!-- Landing Section -->
+    <section id="landing" class="section">
+        <div class="welcome">
+            <h1>For Twyla 💜</h1>
+            <p>Your presence makes my world complete</p>
+            <button id="start-btn" class="btn" onclick="startJourney()">Let's Begin</button>
+        </div>
+    </section>
 
-    <section id="journey" style="display: none;">
+    <!-- Journey Section -->
+    <section id="journey" class="section" style="display: none;">
         <div class="memory" id="memory-1">
-            <img src="first-date.jpg" alt="First Date">
-            <p>The first day we met, the world seemed to pause. 💫 I'll cherish that moment for all time.</p>
-            <button class="next-memory" onclick="nextMemory(2)">Next</button>
+            <img src="first-date.jpg" alt="First Date" class="memory-img">
+            <p class="memory-text">The first day we met was a moment I’ll never forget. It felt like time stood still. 💫</p>
+            <button class="next-btn" onclick="nextMemory(2)">Next</button>
         </div>
 
         <div class="memory" id="memory-2" style="display: none;">
-            <img src="trip-photo.jpg" alt="Our Trip">
-            <p>The magical night we traveled home together—every moment was a dream, every word a melody. 🌙</p>
-            <button class="next-memory" onclick="nextMemory(3)">Next</button>
+            <img src="trip-photo.jpg" alt="Our Trip" class="memory-img">
+            <p class="memory-text">That magical night we traveled back together—unforgettable. ✨</p>
+            <button class="next-btn" onclick="nextMemory(3)">Next</button>
         </div>
 
         <div class="memory" id="memory-3" style="display: none;">
-            <img src="abba-song.jpg" alt="Our Song - Dancing Queen">
-            <p>"Dancing Queen" was the soundtrack to our connection. That magical moment when everything clicked. 🎶</p>
-            <button class="next-memory" onclick="nextMemory(4)">Next</button>
-        </div>
-
-        <h2>Puzzle Challenge 💭</h2>
-        <p>There’s a small puzzle to unlock the next step. Solve it with love:</p>
-        <input type="text" id="puzzle-input" placeholder="What's the answer?" />
-        <button onclick="checkPuzzle()">Submit</button>
-    </section>
-
-    <section id="final-message" style="display: none;">
-        <h2>Your Special Message 💌</h2>
-        <p id="final-msg">Hold on, I’m preparing something just for you...</p>
-        <button onclick="revealGift()">See Your Gift 🎁</button>
-    </section>
-
-    <section id="gift" style="display: none;">
-        <h2>Your Valentine's Gift 💖</h2>
-        <p>This gift is a celebration of who we are, of all our moments, songs, and memories. 💫</p>
-        <a href="playlist-link" target="_blank">Click here for a playlist full of memories and music 🎶</a>
-    </section>
-
-    <footer>
-        <p>Forever yours, in every word and in every melody 🎶</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <img src="abba-song.jpg" alt="Our Song - Dancing Queen" class="memory-img">
+            <p class="memory-text">The first time we sang "Dancing Queen" together,
