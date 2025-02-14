@@ -1,73 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f7f5;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f9f5f3;
     color: #333;
-}
-
-header {
     text-align: center;
-    padding: 50px;
-    background-color: #ff7b9d;
-    color: white;
+    padding: 30px;
 }
 
-header h1 {
-    font-size: 3em;
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #6c4f9c;
     margin-bottom: 20px;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
 button {
-    background-color: #ff4f70;
+    background-color: #6c4f9c;
     color: white;
-    padding: 15px 30px;
+    font-size: 16px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
     cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #ff1f4f;
+    background-color: #56397b;
 }
 
-#journey {
-    margin: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#header {
+    padding: 50px;
 }
 
 .memory {
-    display: none;
-    margin: 20px 0;
+    margin: 30px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#puzzle {
-    font-weight: bold;
-    color: #ff4f70;
+#journey {
+    background-color: #e8d8f3;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 40px;
 }
 
 #final-message {
+    background-color: #d8d2f0;
+    border-radius: 10px;
+    padding: 30px;
     display: none;
-    text-align: center;
-    margin: 20px;
+}
+
+#gift {
+    background-color: #e8e6f3;
+    padding: 20px;
+    margin-top: 30px;
+    display: none;
 }
 
 footer {
-    text-align: center;
-    margin-top: 30px;
-    background-color: #ff7b9d;
-    padding: 15px;
-    color: white;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+input {
+    padding: 8px;
+    font-size: 18px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#start-btn {
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: #f7b1d6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+#start-btn:hover {
+    background-color: #d98cbf;
 }
