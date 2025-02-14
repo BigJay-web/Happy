@@ -33,4 +33,52 @@
 
         <div class="memory" id="memory-3" style="display: none;">
             <img src="abba-song.jpg" alt="Our Song - Dancing Queen" class="memory-img">
-            <p class="memory-text">The first time we sang "Dancing Queen" together,
+            <p class="memory-text">The first time we sang "Dancing Queen" together, I knew we'd click. 🎶</p>
+            <button class="next-btn" onclick="nextMemory(4)">Next</button>
+        </div>
+
+        <div class="memory" id="memory-4" style="display: none;">
+            <h2>Unlock My Heart 💌</h2>
+            <p>Solve the puzzle to continue: <strong>What’s the key to my heart?</strong></p>
+            <input type="text" id="puzzle-input" placeholder="Type your answer..." class="puzzle-input">
+            <button onclick="checkPuzzle()" class="btn">Submit</button>
+        </div>
+    </section>
+
+    <!-- Special Message Section -->
+    <section id="final-message" class="section" style="display: none;">
+        <h2>You've Unlocked Something Special 💖</h2>
+        <p id="special-msg">Let me tell you how much you mean to me...</p>
+        <button onclick="revealGift()" class="btn">See Your Gift 🎁</button>
+    </section>
+
+    <!-- Gift Section -->
+    <section id="gift" class="section" style="display: none;">
+        <h2>Your Valentine's Gift 💝</h2>
+        <p>This is a token of everything we’ve shared and the magic we create every day.</p>
+        <a href="playlist-link" target="_blank" class="btn">Listen to Our Playlist 🎶</a>
+    </section>
+
+    <!-- Music Playlist Section -->
+    <section id="playlist" class="section" style="display: none;">
+        <h2>Our Special Playlist 🎧</h2>
+        <p>Enjoy some of our favorite tracks that remind us of all the moments we've shared.</p>
+        <div id="music-player">
+            <iframe src="https://open.spotify.com/embed/playlist/your_playlist_id" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>
+
+    <!-- Movie Section -->
+    <section id="movie-section" class="section" style="display: none;">
+        <h2>Our Favorite Movie - Good Will Hunting 🎬</h2>
+        <p>We both love "Good Will Hunting" because it speaks to our own journeys. The struggles, the growth, and the beautiful friendship between Will and Chuck. It’s one of those movies that makes you realize the importance of trust, vulnerability, and finding your way. Every time we watch it, we find something new, and it always leaves us feeling inspired.</p>
+        <button onclick="goBackToGift()" class="btn">Back to Gift 🎁</button>
+    </section>
+
+    <footer class="footer">
+        <p>Every memory, every laugh, and every song is a moment in our love story.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
